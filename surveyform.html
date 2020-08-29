@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clarusway survey form</title>
+</head>
+<body>
+    <h1>Clarusway Survey Form</h1>
+    <p>Thank you for taking the time to help us improve the platform</p>
+    <form action="/result.html">
+        <label for="fname">Name:</label><br>
+        <input type="text" id="fname" name="fname" value="enter your name"><br>
+        
+        <label for="lname">Surname:</label><br>
+        <input type="text" id="lname" name="lname" value="Enter your Surname"><br>
+        
+        <!-- <input type="submit" value="Submit"> -->
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" value="users@clarusway.com">
+        <br><br>
+        <label for="role"> Which option best describes your current role? </label>
+        
+        <br>
+        <!-- multiple 1den fazla seçmek için
+        selected default olarak hangisinin seçili olacağını belli eder -->
+        <select name="role" id="role"> 
+           <option value="disabled selected value">select current role</option>
+            <option value="Fullstack">Fullstack </option>
+            <option value="DevOPS"> DevOPS </option>
+            <option value="SDET"> SDET </option>
+            <option value="DataScience"> DataScience </option>
+        </select>
+        <br>
+        <p>Would you recommended Clarusway to a friend</p>
+        <input type="radio" id="definitely,yes" name="recommended" value="definitely,yes">
+        <label for="definitely,yes">definitely,yes</label><br>
+        <input type="radio" id="maybe" name="recommended" value="maybe" >
+        <label for="maybe">maybe</label><br>
+        <input type="radio" id="not sure" name="recommended" value="not sure">
+        <label for="Not sure">Not sure</label><br>
+        <br>
+        <p>What is your favorite feature of Clarusway</p>
+        <select name="favorite" id="favorite"> 
+            <option value="disabled selected value">select an option </option>
+             <option value="Fullstack">Fullstack </option>
+             <option value="DevOPS"> DevOPS </option>
+             <option value="SDET"> SDET </option>
+             <option value="DataScience"> DataScience </option>
+         </select>
+
+         <br>
+         <p>What would you like to see improved?(check all that apply)</p>
+         <input type="checkbox" id="frontend" name="frontend">
+         <label for="Frontend">Frontend Projects</label><br>
+         <input type="checkbox" id="backend" name="backend">
+         <label for="Backend">Backend Projects</label><br>
+         <input type="checkbox" id="datascience" name="datascience">
+         <label for="datascience">Data Science</label><br>
+         <input type="checkbox" name="additional">
+         <label for="additional">Additional courses</label>
+         <br><br>
+         <label for="a">Any comments or suggestions </label><br>
+         <textarea name="a" id="a" cols="30" rows="3">enter your comment here
+         </textarea><br>
+         <input type="submit" value="Submit">
+         
+         
+
+         
+     </form> 
+
+</body>
+</html>
